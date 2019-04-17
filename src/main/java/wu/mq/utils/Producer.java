@@ -28,7 +28,7 @@ public class Producer {
 	Connection connection;
 	// 事务管理
 	Session session;
-	ThreadLocal<MessageProducer> threadLocal = new ThreadLocal<MessageProducer>();
+	ThreadLocal<MessageProducer> threadLocal = new ThreadLocal<>();
 
 	public void init() {
 		try {

@@ -30,7 +30,7 @@ public class Consumer {
 
     Session session;
 
-    ThreadLocal<MessageConsumer> threadLocal = new ThreadLocal<>();
+    ThreadLocal<MessageConsumer> threadLocal = new ThreadLocal<MessageConsumer>();
     AtomicInteger count = new AtomicInteger();
 
     public void init(){
